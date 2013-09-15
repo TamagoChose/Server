@@ -20,6 +20,7 @@ class AlbumRestController extends AbstractRestfulController {
     }
 
     public function get($id) {
+        die($id);
         $album = $this->getAlbumTable()->getAlbum($id);
         return array("data" => $album);
     }
